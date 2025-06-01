@@ -12,8 +12,6 @@ app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
 
-// Middleware to parse JSON bodies
-app.use(express.json());
 
 // GraphQL endpoint
 app.use('/graphql', graphqlHTTP((req,res)=>{
